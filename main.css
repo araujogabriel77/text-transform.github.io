@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+a,
+textarea {
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
+}
+body {
+  background-color: #101225;
+}
+#header {
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+#header h1 {
+  color: #05ffa8;
+  font-size: 20pt;
+}
+#container {
+  margin: 20px auto;
+  display: flex;
+  max-width: 1280px;
+  position: relative;
+}
+textarea {
+  width: 48%;
+  background-color: #5b62b3;
+  color: #05ffa8;
+  resize: none;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 12px 6px;
+  font-size: 14pt;
+  margin-left: 1%;
+}
+#clear {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+#result {
+  width: 48%;
+  height: 350px;
+  margin-left: 1%;
+  border-radius: 4px;
+  background-color: #551eb3;
+  padding: 6px;
+}
+.p1 {
+  color: #05ffa8;
+  font-size: 14pt;
+}
+
+#buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 330px;
+  flex-wrap: wrap;
+}
+.button,
+.button2 {
+  margin: 20px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #05ffa8;
+  border: 1px solid #551eb3;
+  cursor: pointer;
+  color: #551eb3;
+  transition: 0.3s;
+  font-size: 11pt;
+}
+#copy {
+  width: 120px;
+  background-color: #551eb3;
+  border: 1px solid #05ffa8;
+  color: #05ffa8;
+}
+#clear {
+  width: 80px;
+  background-color: #551eb3;
+  border: 1px solid white;
+  color: white;
+}
+#clear:hover {
+  background-color: white;
+  border: 1px solid #551eb3;
+  color: #551eb3;
+  transform: scale(1.1);
+}
+#copy:hover {
+  background-color: #05ffa8;
+  border: 1px solid #551eb3;
+  color: #551eb3;
+  transform: scale(1.1);
+}
+.button:hover {
+  background-color: #551eb3;
+  color: #05ffa8;
+  border: 1px solid #05ffa8;
+  transform: scale(1.03);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 15px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #05ffa8;
+  transition: 0.35s;
+}
+footer a:hover {
+  transform: scale(1.045);
+  color: #8bfad3;
+}
+
+@media screen and (max-width: 600px) {
+  #header h1 {
+    font-size: 18pt;
+  }
+  #container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  textarea,
+  #result {
+    margin-top: 15px;
+    width: 90%;
+    height: 200px;
+    font-size: 9pt;
+  }
+  .p1 {
+    font-size: 9pt;
+  }
+  #clear {
+    left: 25px;
+    top: 150px;
+  }
+}
